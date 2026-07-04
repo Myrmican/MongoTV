@@ -90,6 +90,12 @@
         "example": "Manden tog en BOB men hørmede stadig."
     },
     {
+        "word": "natspermer",
+        "variants": [],
+        "definition": "Et lille irriterende insekt, der sidder på væggen.",
+        "example": "\"Jeg er nødt til at tage hundredevis af de her natspermere hver dag\"."
+    },
+    {
         "word": "star citizen",
         "variants": [],
         "definition": "At seksuelt tilfredsstille sig selv.",
@@ -112,5 +118,17 @@
         "variants": ["shower and a shaving"],
         "definition": "To take a \"shower\" (and forget to clean your armpits) and then shave.",
         "example": "The man took a SAS, but the body oder was still horrible."
+    },
+    {
+        "word": "pølsssch",
+        "variants": ["sowtateds"],
+        "definition": "Et stort, brunt, langt stykke kød - kan også findes i et toilet.",
+        "example": "Manden spiste noget pølsssch med ost."
+    },
+    {
+        "word": "sowtateds",
+        "variants": ["pølsssch"],
+        "definition": "A big, brown, long piece of meat - can be found in the toilet.",
+        "example": "The man ate some sawtateds wid tjids."
     }
 ]
