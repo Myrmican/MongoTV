@@ -37,11 +37,12 @@ body {
     line-height: 1.6;
     color: var(--text-color);
 
-    margin: 0;
-    padding: 40px 20px;
+    margin: 0 !important;
+    padding: 0 0 40px 0 !important; 
+    width: 100%;
 }
 
-body > * {
+body > *:not(.navbar) {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -53,6 +54,7 @@ h1 {
     border-bottom: 2px solid var(--border-color);
     padding-bottom: 10px;
     transition: color 0.3s, border-color 0.3s;
+    margin-top: 30px;
 }
 
 .dictionary-entry {
@@ -141,4 +143,50 @@ h1 {
 #search-input::placeholder {
     color: var(--variant-color);
     opacity: 0.8;
+}
+
+.navbar {
+    width: 100vw;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    font-weight: 600;
+    align-items: center;
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-left: calc(-50vw + 50%);
+}
+
+.nav-logo a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    grid-column: 2;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover, 
+.nav-links li a.active {
+    background-color: #34495e;
+    color: #fff;
 }
