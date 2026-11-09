@@ -43,7 +43,7 @@ body {
 }
 
 body > *:not(.navbar) {
-    max-width: 600px;
+    max-width: 660px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,6 +63,24 @@ h1 {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px var(--card-shadow);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#location-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100% !important;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+.locations-entry {
+    background: var(--card-bg);
+    padding: 30px 20px;
+    flex: 1 1 calc(25% - 15px);
+    min-width: 220px;
+    border-radius: 15px;
     transition: background 0.3s, box-shadow 0.3s;
 }
 
@@ -146,7 +164,7 @@ h1 {
 }
 
 .navbar {
-    width: 100vw;
+    box-sizing: border-border-box;
     width: 100%;
     box-sizing: border-box;
     display: grid;
@@ -157,7 +175,6 @@ h1 {
     color: white;
     padding: 15px 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    margin-left: calc(-50vw + 50%);
 }
 
 .nav-logo a {

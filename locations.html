@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoTV - Lokationer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="description" content="Den officiele MongoTV-ordbog.">
+    <meta name="google-site-verification" content="774HfDz38bjYn3ah6h6kz5AwDGAhUz_0xxN7psTXIm8"/>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#">MongoTV</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/">Ordbog</a></li>
+        </ul>
+
+        <div class="toggle-container">
+            <button id="theme-toggle">Skift tema</button>
+        </div>
+    </nav>
+
+    <h1>Lokationer</h1>
+    
+    <div id="location-container"></div>
+
+    <script src="src/main.js"></script>
+
+    <script>
+        const container = document.getElementById('location-container');
+
+        fetch('locations/config.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Kunne ikke hente JSON-filen: ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(data => {
+                displayEntries(data);
+            })
+            .catch(error => {
+                console.error('Fejl:', error);
+                container.innerHTML = `<p style="color:red;">Der skete en fejl under indlæsning af lokationer.</p>`;
+            });
+
+        function displayEntries(entries) {
+            container.innerHTML = '';
+
+            if (entries.length === 0) {
+                container.innerHTML = '<p>Ingen resultater fundet.</p>';
+                return;
+            }
+
+            entries.forEach(entry => {
+                const entryDiv = document.createElement('div');
+                entryDiv.className = 'locations-entry';
+                entryDiv.style.alignItems = 'center';
+                entryDiv.style.display = 'flex';
+                entryDiv.style.flexDirection = 'column';
+                entryDiv.innerHTML = `
+                    <div class="word-header" style="display: flex; align-items: center; gap: 10px;">
+                        <h2 class="word" style="margin: 0;">${entry.name}</h2>
+                        <span class="audio-btn-container"></span>
+                    </div>
+                    <img src="locations/images/${entry.image}.png" style="max-width: 100%; max-height: 250px; object-fit: contain;">
+                    <hr style="width: 100%; border: none; border-top: 2px solid #333; margin: 10px 0;">
+                    <div>${entry.description}</div>
+                `;
+
+                container.appendChild(entryDiv);
+            });
+        }
+    </script>
+</body>

@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Sorgenfri Station",
+        "description": "Din rejse i Mongo-World starter ved Sorgenfri Station. Overfor ser du den famøse Lidl.",
+        "image": "sorgenfri-station",
+        "mapsUrl": "https://maps.app.goo.gl/4sUUFy2aHL3ni2D17"
+    },
+    {
+        "name": "Q8",
+        "description": "Til højre for stationen, få meter væk, ligger Q8. Denne tank er kendt for at give John rigtig meget pølse. Få en stor grillpølse eller chipsssch til overpriser!",
+        "image": "q8",
+        "mapsUrl": "https://maps.app.goo.gl/k76UZTbdySa7xojb8"
+    },
+    {
+        "name": "Lidl",
+        "description": "Overfor Sorgenfri Station og overfor Q8 ligger Lidl. Denne butik er en klar favorit og har solgt mange osteboller og kager til Dön Ölsen.",
+        "image": "lidl",
+        "mapsUrl": "https://maps.app.goo.gl/NAVtPaAwTYxBfra56"
+    },
+    {
+        "name": "Netto",
+        "description": "Mellem stationen og kirken ligger Netto. Der kan man nogle gange se en hjemløs rumæner stå og danse med en ostebolle på hovedet.",
+        "image": "netto",
+        "mapsUrl": "https://maps.app.goo.gl/PZ5V1WLT9YaT5cLZA"
+    },
+    {
+        "name": "Brugsen",
+        "description": "Ved Sorgenfri Torv ligger både en boghandel med gode BMO'er, men også Brugsen. De sælger gode karrybolle-pølser og har tit barynæse på tilbud.",
+        "image": "brugsen",
+        "mapsUrl": "https://maps.app.goo.gl/VUsLazpPwMakgst19"
+    },
+    {
+        "name": "Sorgenfri Kirke",
+        "description": "Synes man, at kirker er hyggelige, skal du dreje til venstre og fortsætte lige ud, når du kommer op fra stationen. Så ankommer du til Sorgenfri Kirke, hvor du kan være heldig at fange munken.",
+        "image": "sorgenfri-kirke",
+        "mapsUrl": "https://maps.app.goo.gl/zLc4GZ9hLHoz5CH27"
+    },
+    {
+        "name": "Byens Pizzahouse",
+        "description": "Engang gik John over til Byens Pizzahouse for at spise en pizza. Den er desværre lukket nu.",
+        "image": "pizzahouse",
+        "mapsUrl": "https://maps.app.goo.gl/wK47ymZmP9m9K688A"
+    },
+    {
+        "name": "Hummeltoftvej",
+        "description": "Ved en mark tæt på Fursøen, gik John og snakkede med heste og nævnte, at hestene nok <b>heller ikke</b> kan læse.",
+        "image": "hummeltoftvej",
+        "mapsUrl": ""
+    },
+    {
+        "name": "Gammel Lundtoftevej 1A",
+        "description": "Ved en bænk i Lyngby kan man nogle gange spotte John sidde og holde regnskab med hans forfærdelige økonomi eller sove.",
+        "image": "lyngby-bænk",
+        "mapsUrl": "https://maps.app.goo.gl/4JoLBdMziqnJ9kVS8"
+    }
+]
